@@ -1,0 +1,80 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/screens.rpy", line 360, in execute
+    screen main_menu():
+  File "game/screens.rpy", line 360, in execute
+    screen main_menu():
+  File "game/screens.rpy", line 373, in execute
+    use navigation
+  File "game/screens.rpy", line 288, in execute
+    screen navigation():
+  File "game/screens.rpy", line 288, in execute
+    screen navigation():
+  File "game/screens.rpy", line 290, in execute
+    vbox:
+  File "game/screens.rpy", line 312, in execute
+    imagebutton:
+  File "game/screens.rpy", line 312, in keywords
+    imagebutton:
+  File "game/screens.rpy", line 314, in <module>
+    action showMenu("load")
+NameError: name 'showMenu' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
+    python hide:
+  File "C:\Users\sarah\Downloads\renpy-8.2.3-sdk.7z\renpy-8.2.3-sdk\renpy\ast.py", line 823, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\sarah\Downloads\renpy-8.2.3-sdk.7z\renpy-8.2.3-sdk\renpy\python.py", line 1178, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in <module>
+    python hide:
+  File "renpy/common/_layout/screen_main_menu.rpym", line 35, in _execute_python_hide
+    ui.interact()
+  File "C:\Users\sarah\Downloads\renpy-8.2.3-sdk.7z\renpy-8.2.3-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\sarah\Downloads\renpy-8.2.3-sdk.7z\renpy-8.2.3-sdk\renpy\display\core.py", line 2166, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\sarah\Downloads\renpy-8.2.3-sdk.7z\renpy-8.2.3-sdk\renpy\display\core.py", line 2688, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\sarah\Downloads\renpy-8.2.3-sdk.7z\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\sarah\Downloads\renpy-8.2.3-sdk.7z\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\sarah\Downloads\renpy-8.2.3-sdk.7z\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\sarah\Downloads\renpy-8.2.3-sdk.7z\renpy-8.2.3-sdk\renpy\display\screen.py", line 480, in visit_all
+    callback(self)
+  File "C:\Users\sarah\Downloads\renpy-8.2.3-sdk.7z\renpy-8.2.3-sdk\renpy\display\core.py", line 2688, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\sarah\Downloads\renpy-8.2.3-sdk.7z\renpy-8.2.3-sdk\renpy\display\screen.py", line 491, in per_interact
+    self.update()
+  File "C:\Users\sarah\Downloads\renpy-8.2.3-sdk.7z\renpy-8.2.3-sdk\renpy\display\screen.py", line 697, in update
+    self.screen.function(**self.scope)
+  File "game/screens.rpy", line 360, in execute
+    screen main_menu():
+  File "game/screens.rpy", line 360, in execute
+    screen main_menu():
+  File "game/screens.rpy", line 373, in execute
+    use navigation
+  File "game/screens.rpy", line 288, in execute
+    screen navigation():
+  File "game/screens.rpy", line 288, in execute
+    screen navigation():
+  File "game/screens.rpy", line 290, in execute
+    vbox:
+  File "game/screens.rpy", line 312, in execute
+    imagebutton:
+  File "game/screens.rpy", line 312, in keywords
+    imagebutton:
+  File "game/screens.rpy", line 314, in <module>
+    action showMenu("load")
+NameError: name 'showMenu' is not defined
+
+Windows-10-10.0.22631 AMD64
+Ren'Py 8.2.3.24061702
+Along for the Loop 1.0
+Sun Aug 11 15:59:33 2024
