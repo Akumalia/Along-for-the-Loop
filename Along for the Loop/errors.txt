@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 316: Line is indented, but the preceding textbutton statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    imagebutton:
-    ^
+File "game/script.rpy", line 126: end of line expected.
+    lay sound "wind.mp3" noloop fadein 0.5 fadeout 0.5
+                         ^
 
 Ren'Py Version: Ren'Py 8.2.3.24061702
-Sun Aug 11 16:04:09 2024
+Sun Aug 11 22:30:32 2024

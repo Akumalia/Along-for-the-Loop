@@ -3,9 +3,13 @@ define f = Character('Friend', color="#870012")
 
 label start:
 
+    play music "background.mp3" loop volume 0.03
+
     scene white
 
     f "Good! We made it in time! {size=*0.5}Okay, we should be way ahead of those bastards.{/size}"
+
+    play sound "breathing.mp3" noloop fadeout 0.5
 
     p "*huff* *huff* Why-*wheeze* did we have to get here so fast?! *gasp* Couldn't we have just-- Who am I kidding, not like you'll explain anyway."
 
@@ -18,6 +22,8 @@ label start:
 
     f "Oh, um... Well, I've never made it this far before. It's been a while since I've made any progress."
 
+    play sound "wind.mp3" noloop fadeout 0.5
+
     "For the first time since this morning, FRIEND looks... lost? They look like they have no idea where they are, what they're doing... "
     "They're looking around as if searching for something, until they set their eyes on the nearby hill. After a moment of staring up the hill, they seem to become calm again."
 
@@ -25,16 +31,23 @@ label start:
 
     p "What do you mean? End of what?"
 
+    play sound "thriller.mp3" noloop fadein 0.5 fadeout 0.5
+
     "FRIEND begins walking up the hill, holding my wrist more tightely than they'd been before. It is almost painful, but I decided not to bother arguing anymore." 
     "They had saved my life countless times today, and I think I can trust them at least one more time... Right?"
     
     #play sound #walking toward hill sounds
+
+    play sound "walking.mp3" noloop fadein 0.5 fadeout 0.5
+
 label cliff:
 
     scene black#background image of top of hill i.e. cliff
     with fade
 
     "We made it to the top of the cliff, and I was wheezing yet again."
+
+    play sound "wind.mp3" noloop fadein 0.5 fadeout 0.5
     
     f "{size=*0.5}...this is it... this has to be it...!{/size}"
 
@@ -44,6 +57,8 @@ label cliff:
 
     p "Look, FRIEND, I appreciate everything you've done up until this point, but... You are beginning to scare me-"
 
+    play sound "thriller.mp3" noloop fadein 0.5 fadeout 0.5
+
     f "{size=*2.0}That's it! I've got it!{/size}"
 
     p "Huh, wha?!"
@@ -52,6 +67,8 @@ label cliff:
 
     f "I need you to jump!"
 
+    play sound "wind.mp3" noloop fadein 0.5 fadeout 0.5
+    
     "I don't respond. What? Jump? Jump where? They can't mean..."
 
     p "Y-y-you... want me... to jump off? From here?"
@@ -66,6 +83,8 @@ label cliff:
 
     f "I've been protecting you all this time, and now, finally, one last cruel joke, I need you to disappear..."
 
+    play sound "wind.mp3" noloop fadein 0.5 fadeout 0.5
+    
     "As I look closer at them, they seem so tired, so jaded, as if they have been through a war that no one other than themself can see."
     "Will me jumping really save them? What about me? I mean, they've saved me until now, maybe everything will be fine?"
 
@@ -74,9 +93,13 @@ label cliff:
 
         "I trust you." :
 
+            play sound "click.mp3" volume 0.04
+
             jump trust
 
         "Absolutely not." :
+
+            play sound "click.mp3" volume 0.04
 
             jump refuse
 
@@ -100,11 +123,15 @@ label trust:
 
     #transition here to dark as the player falls, no images, just text and sound.
 
+    play sound "wind.mp3" noloop fadein 0.5 fadeout 0.5
+
     "FRIEND yanks me towrd the cliff, almost flinging me over the edge."
 
     "All I feel is the wind, and as I look back at them, I see FRIEND's face, plastered with a small grin, while a tear escapes from their eye."
 
     "I close my eyes, and feel gravity pull me down, the wind swirling around me."
+
+    stop music
 
     "But then..."
 
@@ -121,6 +148,8 @@ label trust:
 
 label refuse:
 
+    play sound "wind.mp3" noloop fadein 0.5 fadeout 0.5
+
     p "FRIEND, what are you talking about?! You've absolutely lost it!"
 
     p "Look, I've been going along with this whole 'Time Loop' thing, but enough is enough! I'm not going to jump!"
@@ -136,5 +165,7 @@ label refuse:
     "I ripped my hand from their grip, and walked away. I expected them to follow but they didn't. All they did was stand there, staring at the ground."
 
     f "Well, I guess one more time can't hurt."
+
+    play sound "thriller.mp3" noloop fadein 0.5 fadeout 0.5
 
     "I never saw FRIEND again."
