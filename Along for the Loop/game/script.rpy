@@ -1,5 +1,5 @@
-﻿define p = Character('Main', color="#7ee89d")
-define f = Character('Friend', color="#870012")
+﻿define p = Character('Me', color="#C86686")
+define f = Character('Nwin', color="#3A1F4C")
 
 label start:
 
