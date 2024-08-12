@@ -3,13 +3,14 @@ define f = Character('Friend', color="#870012")
 
 label start:
 
-    scene bg clifftop
+    scene Bg_CliffBase
     with fade
+
     play music "background.mp3" loop volume 0.03
 
-
-
     f "Good! We made it in time! {size=*0.5}Okay, we should be way ahead of those bastards.{/size}"
+
+    show jaded_neutral
 
     play sound "breathing.mp3" noloop fadeout 0.5
 
